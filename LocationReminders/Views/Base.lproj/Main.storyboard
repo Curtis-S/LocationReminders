@@ -151,7 +151,6 @@
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="enter  reminder note here " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wZh-jr-oh3">
                                                     <rect key="frame" x="20" y="11" width="374" height="178"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
