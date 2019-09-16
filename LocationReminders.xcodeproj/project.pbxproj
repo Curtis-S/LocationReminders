@@ -7,33 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D3007D1232FDF6900CD6599 /* Nisa.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 5D3007D0232FDF6900CD6599 /* Nisa.gpx */; };
+		5D3007D3232FDF7900CD6599 /* Google.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 5D3007D2232FDF7900CD6599 /* Google.gpx */; };
+		5D36ABB2232D382000D69E13 /* LocationResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D36ABB1232D382000D69E13 /* LocationResultsController.swift */; };
+		5D36ABB4232D643F00D69E13 /* LocationNotifacation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D36ABB3232D643F00D69E13 /* LocationNotifacation.swift */; };
+		5D959F5D232E8B520032658C /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D959F5C232E8B520032658C /* Helpers.swift */; };
 		5DB1AEDE232A773A004B679F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB1AEDD232A773A004B679F /* AppDelegate.swift */; };
-		5DB1AEE0232A773A004B679F /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB1AEDF232A773A004B679F /* MasterViewController.swift */; };
+		5DB1AEE0232A773A004B679F /* LocationNotesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB1AEDF232A773A004B679F /* LocationNotesController.swift */; };
 		5DB1AEE2232A773A004B679F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB1AEE1232A773A004B679F /* DetailViewController.swift */; };
 		5DB1AEE5232A773A004B679F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DB1AEE3232A773A004B679F /* Main.storyboard */; };
 		5DB1AEE7232A773A004B679F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DB1AEE6232A773A004B679F /* Assets.xcassets */; };
 		5DB1AEEA232A773A004B679F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DB1AEE8232A773A004B679F /* LaunchScreen.storyboard */; };
 		5DB1AEF6232A7FB7004B679F /* AddReminderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB1AEF5232A7FB7004B679F /* AddReminderController.swift */; };
-		5DB1AEF8232A7FD3004B679F /* AddLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB1AEF7232A7FD3004B679F /* AddLocationViewController.swift */; };
 		5DB1AEFA232A7FE3004B679F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB1AEF9232A7FE3004B679F /* LocationManager.swift */; };
-		5DF1C67A232CC882004061B3 /* GeoLoaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF1C679232CC882004061B3 /* GeoLoaction.swift */; };
-		5DF1C67C232CC891004061B3 /* GeoFencing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF1C67B232CC891004061B3 /* GeoFencing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D3007D0232FDF6900CD6599 /* Nisa.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Nisa.gpx; sourceTree = "<group>"; };
+		5D3007D2232FDF7900CD6599 /* Google.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Google.gpx; sourceTree = "<group>"; };
+		5D36ABB1232D382000D69E13 /* LocationResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationResultsController.swift; sourceTree = "<group>"; };
+		5D36ABB3232D643F00D69E13 /* LocationNotifacation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNotifacation.swift; sourceTree = "<group>"; };
+		5D959F5C232E8B520032658C /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		5DB1AEDA232A773A004B679F /* LocationReminders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationReminders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DB1AEDD232A773A004B679F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5DB1AEDF232A773A004B679F /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		5DB1AEDF232A773A004B679F /* LocationNotesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNotesController.swift; sourceTree = "<group>"; };
 		5DB1AEE1232A773A004B679F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		5DB1AEE4232A773A004B679F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5DB1AEE6232A773A004B679F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DB1AEE9232A773A004B679F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DB1AEEB232A773A004B679F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DB1AEF5232A7FB7004B679F /* AddReminderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderController.swift; sourceTree = "<group>"; };
-		5DB1AEF7232A7FD3004B679F /* AddLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationViewController.swift; sourceTree = "<group>"; };
 		5DB1AEF9232A7FE3004B679F /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
-		5DF1C679232CC882004061B3 /* GeoLoaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLoaction.swift; sourceTree = "<group>"; };
-		5DF1C67B232CC891004061B3 /* GeoFencing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoFencing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D3007CD232FDF1C00CD6599 /* mockLocations */ = {
+			isa = PBXGroup;
+			children = (
+				5D3007D2232FDF7900CD6599 /* Google.gpx */,
+				5D3007D0232FDF6900CD6599 /* Nisa.gpx */,
+			);
+			path = mockLocations;
+			sourceTree = "<group>";
+		};
+		5D36ABAE232D36C300D69E13 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5D959F5C232E8B520032658C /* Helpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		5DB1AED1232A773A004B679F = {
 			isa = PBXGroup;
 			children = (
@@ -66,12 +87,13 @@
 		5DB1AEDC232A773A004B679F /* LocationReminders */ = {
 			isa = PBXGroup;
 			children = (
+				5D36ABAE232D36C300D69E13 /* Helpers */,
+				5D3007CD232FDF1C00CD6599 /* mockLocations */,
 				5DB1AEF4232A79D0004B679F /* Privacy */,
 				5DB1AEF3232A7902004B679F /* Controllers */,
 				5DB1AEF2232A78F7004B679F /* Views */,
 				5DB1AEF1232A78E4004B679F /* Models */,
 				5DB1AEDD232A773A004B679F /* AppDelegate.swift */,
-				5DB1AEE3232A773A004B679F /* Main.storyboard */,
 				5DB1AEE6232A773A004B679F /* Assets.xcassets */,
 				5DB1AEE8232A773A004B679F /* LaunchScreen.storyboard */,
 				5DB1AEEB232A773A004B679F /* Info.plist */,
@@ -82,6 +104,7 @@
 		5DB1AEF1232A78E4004B679F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5D36ABB3232D643F00D69E13 /* LocationNotifacation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -89,6 +112,7 @@
 		5DB1AEF2232A78F7004B679F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5DB1AEE3232A773A004B679F /* Main.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -97,9 +121,9 @@
 			isa = PBXGroup;
 			children = (
 				5DB1AEE1232A773A004B679F /* DetailViewController.swift */,
-				5DB1AEDF232A773A004B679F /* MasterViewController.swift */,
+				5DB1AEDF232A773A004B679F /* LocationNotesController.swift */,
 				5DB1AEF5232A7FB7004B679F /* AddReminderController.swift */,
-				5DB1AEF7232A7FD3004B679F /* AddLocationViewController.swift */,
+				5D36ABB1232D382000D69E13 /* LocationResultsController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -108,8 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				5DB1AEF9232A7FE3004B679F /* LocationManager.swift */,
-				5DF1C679232CC882004061B3 /* GeoLoaction.swift */,
-				5DF1C67B232CC891004061B3 /* GeoFencing.swift */,
 			);
 			path = Privacy;
 			sourceTree = "<group>";
@@ -174,6 +196,8 @@
 			files = (
 				5DB1AEEA232A773A004B679F /* LaunchScreen.storyboard in Resources */,
 				5DB1AEE7232A773A004B679F /* Assets.xcassets in Resources */,
+				5D3007D3232FDF7900CD6599 /* Google.gpx in Resources */,
+				5D3007D1232FDF6900CD6599 /* Nisa.gpx in Resources */,
 				5DB1AEE5232A773A004B679F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,13 +209,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DF1C67C232CC891004061B3 /* GeoFencing.swift in Sources */,
 				5DB1AEE2232A773A004B679F /* DetailViewController.swift in Sources */,
-				5DF1C67A232CC882004061B3 /* GeoLoaction.swift in Sources */,
 				5DB1AEF6232A7FB7004B679F /* AddReminderController.swift in Sources */,
+				5D36ABB4232D643F00D69E13 /* LocationNotifacation.swift in Sources */,
 				5DB1AEFA232A7FE3004B679F /* LocationManager.swift in Sources */,
-				5DB1AEF8232A7FD3004B679F /* AddLocationViewController.swift in Sources */,
-				5DB1AEE0232A773A004B679F /* MasterViewController.swift in Sources */,
+				5D36ABB2232D382000D69E13 /* LocationResultsController.swift in Sources */,
+				5D959F5D232E8B520032658C /* Helpers.swift in Sources */,
+				5DB1AEE0232A773A004B679F /* LocationNotesController.swift in Sources */,
 				5DB1AEDE232A773A004B679F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

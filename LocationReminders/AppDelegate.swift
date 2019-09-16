@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import CoreLocation
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
 
     var window: UIWindow?
+    let locationManager = CLLocationManager()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -20,6 +23,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
         navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
         splitViewController.delegate = self
+        locationManager.delegate = self
+        locationManager.requestAlwaysAuthorization()
+        
+        let options: UNAuthorizationOptions = [.badge, .sound, .alert]
+        UNUserNotificationCenter.current()
+            .requestAuthorization(options: options) { success, error in
+                if let error = error {
+                    print("Error: \(error)")
+                }
+        }
         return true
     }
 
@@ -39,6 +52,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        application.applicationIconBadgeNumber = 0
+        UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
+        UNUserNotificationCenter.current().removeAllDeliveredNotifications()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
@@ -56,6 +72,61 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         }
         return false
     }
+    
+    
+   
 
+}
+
+extension AppDelegate: CLLocationManagerDelegate {
+    
+    func handleEvent(for region: CLRegion!) {
+        // Show an alert if application is active
+        if UIApplication.shared.applicationState == .active {
+            guard let message = note(from: region.identifier) else { return }
+            window?.rootViewController?.showAlert(withTitle: nil, message: message)
+        } else {
+            // Otherwise present a local notification
+            guard let body = note(from: region.identifier) else { return }
+            let notificationContent = UNMutableNotificationContent()
+            notificationContent.body = body
+            notificationContent.sound = UNNotificationSound.default
+            notificationContent.badge = UIApplication.shared.applicationIconBadgeNumber + 1 as NSNumber
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
+            let request = UNNotificationRequest(identifier: "location_change",
+                                                content: notificationContent,
+                                                trigger: trigger)
+            UNUserNotificationCenter.current().add(request) { error in
+                if let error = error {
+                    print("Error: \(error)")
+                }
+            }
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
+        if region is CLCircularRegion {
+           handleEvent(for: region)
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
+        if region is CLCircularRegion {
+           handleEvent(for: region)
+        }
+    }
+    
+    
+    func note(from identifier: String) -> String? {
+        let geotifications = LocationNotifacation.allNotifications()
+        for note in geotifications {
+            if note.identifier == identifier {
+                return note.note
+                
+            }
+        }
+     
+        return nil
+    }
 }
 

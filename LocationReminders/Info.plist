@@ -53,5 +53,7 @@
 	</array>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>this app needs to know your location data to function </string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>this app needs to know your location data to function </string>
 </dict>
 </plist>
