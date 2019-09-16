@@ -19,7 +19,6 @@
 		5DB1AEE7232A773A004B679F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DB1AEE6232A773A004B679F /* Assets.xcassets */; };
 		5DB1AEEA232A773A004B679F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DB1AEE8232A773A004B679F /* LaunchScreen.storyboard */; };
 		5DB1AEF6232A7FB7004B679F /* AddReminderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB1AEF5232A7FB7004B679F /* AddReminderController.swift */; };
-		5DB1AEFA232A7FE3004B679F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB1AEF9232A7FE3004B679F /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +36,6 @@
 		5DB1AEE9232A773A004B679F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5DB1AEEB232A773A004B679F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DB1AEF5232A7FB7004B679F /* AddReminderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderController.swift; sourceTree = "<group>"; };
-		5DB1AEF9232A7FE3004B679F /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +87,6 @@
 			children = (
 				5D36ABAE232D36C300D69E13 /* Helpers */,
 				5D3007CD232FDF1C00CD6599 /* mockLocations */,
-				5DB1AEF4232A79D0004B679F /* Privacy */,
 				5DB1AEF3232A7902004B679F /* Controllers */,
 				5DB1AEF2232A78F7004B679F /* Views */,
 				5DB1AEF1232A78E4004B679F /* Models */,
@@ -126,14 +123,6 @@
 				5D36ABB1232D382000D69E13 /* LocationResultsController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		5DB1AEF4232A79D0004B679F /* Privacy */ = {
-			isa = PBXGroup;
-			children = (
-				5DB1AEF9232A7FE3004B679F /* LocationManager.swift */,
-			);
-			path = Privacy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +201,6 @@
 				5DB1AEE2232A773A004B679F /* DetailViewController.swift in Sources */,
 				5DB1AEF6232A7FB7004B679F /* AddReminderController.swift in Sources */,
 				5D36ABB4232D643F00D69E13 /* LocationNotifacation.swift in Sources */,
-				5DB1AEFA232A7FE3004B679F /* LocationManager.swift in Sources */,
 				5D36ABB2232D382000D69E13 /* LocationResultsController.swift in Sources */,
 				5D959F5D232E8B520032658C /* Helpers.swift in Sources */,
 				5DB1AEE0232A773A004B679F /* LocationNotesController.swift in Sources */,
